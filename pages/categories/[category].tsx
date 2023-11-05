@@ -26,10 +26,13 @@ export const getStaticPaths: GetStaticPaths = async() =>{
 export const getStaticProps: GetStaticProps<CategoryNewsPageProps>=async ({params})=>{
     const category = params?.category?.toString();
     const categoryId = category == 'Dairy' ? '64fc91e3351a494ec88ed21a' : '64fcaa74ce15352f005f6e98';
-    console.log(categoryId)
     const response = await fetch("https://ecomproductapi.onrender.com/api/products")
-    const productResponse: ProductResponse = await response.json();
-    const filteredProducts = productResponse.filter((product) => product.category._id === categoryId);
+    const productResponse: Product[] = await response.json();
+    // const filteredProducts = productResponse.filter((product) => product.category._id === categoryId);
+    // Filter the products based on the categoryId
+    const filteredProducts: Product[] = productResponse.filter(
+        (product: Product) => product.category._id === categoryId
+    );
     return {
         props: { products: filteredProducts },
         revalidate: 5 * 60,

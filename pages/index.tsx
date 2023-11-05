@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { GetServerSideProps } from 'next'
 import { Product, ProductResponse } from '@/models/Products'
@@ -15,7 +14,7 @@ interface HomePageProps{
 
 export const getServerSideProps :GetServerSideProps<HomePageProps> =async()=>{
   const response = await fetch("https://ecomproductapi.onrender.com/api/products")
-  const productResponse: ProductResponse = await response.json();
+  const productResponse: Product[] = await response.json();
   return {
     props: { products: productResponse }
   }
