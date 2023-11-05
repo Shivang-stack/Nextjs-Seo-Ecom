@@ -17,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title key="title">NextJS News App</title>
         <meta name="description" key="description" content="NextJS crash course by Coding in Flow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="dqtJvFR4KWSG0RrtMb5LkLzBq86KHismG-fHfVS10ng" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NextNProgress />
