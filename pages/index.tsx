@@ -25,6 +25,7 @@ export default function HomePage({products}: HomePageProps) {
     <>
     <Head>
       <title key="title">Products</title>
+      <meta name="google-site-verification" content="dqtJvFR4KWSG0RrtMb5LkLzBq86KHismG-fHfVS10ng" />
     </Head>
       <main className={inter.className}>
         <h1>Home Page</h1>

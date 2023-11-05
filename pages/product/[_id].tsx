@@ -47,6 +47,7 @@ export default function ProductPage({ product }: ProductPageProps) {
     <>
       <Head>
         <title key="title">Product Details</title>
+        <meta name="google-site-verification" content="dqtJvFR4KWSG0RrtMb5LkLzBq86KHismG-fHfVS10ng" />
       </Head>
       <main>
         {product ? (

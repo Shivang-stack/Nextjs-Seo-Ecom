@@ -48,7 +48,8 @@ const CategoryPage = ({products}:CategoryNewsPageProps) =>{
     return(
         <>
         <Head>
-            <title key="title">{`${title}- News`}</title>
+            <title key="title">{`${title}`}</title>
+            <meta name="google-site-verification" content="dqtJvFR4KWSG0RrtMb5LkLzBq86KHismG-fHfVS10ng" />
         </Head>
         <main>
             <h1>{title}</h1>
