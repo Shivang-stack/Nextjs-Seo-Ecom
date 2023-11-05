@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nextjs-seo-ecom-f1zo5y1oj-shivang-stack.vercel.app
+
+# Sitemaps
+Sitemap: https://nextjs-seo-ecom-f1zo5y1oj-shivang-stack.vercel.app/sitemap.xml
